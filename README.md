@@ -2,8 +2,8 @@ Calculating DELAB (CIEDELAB) and CIEDE2000 is essential in color science because
 
 
 # Calculate Delta ELAB (XYZ2DeltaElab.m)
-This function calculates the delta E LAB between two sets of XYZ values
-
+The XYZ2DeltaElab function calculates the Delta E LAB (CIE76) color difference between two sets of XYZ color values, representing actual reflectance and predicted reflectance under specified illuminants and observers. It processes the input XYZ values to convert them into LAB color space using the CIE color matching functions and the specified illuminant, allowing for a perceptually relevant assessment of color differences. 
 
 # Calculate Delta E 2000 (DE2000.m)
-This function (DE2000) calculates color difference between an Lab_r (from Actual reflectance) and Lab_Pr (from XYZ predicted) representing actual reflectance and predicted reflectance under specified illuminants and observers. It processes the input XYZ values to convert them into LAB color space using the CIE color matching functions and the specified illuminant, allowing for a perceptually relevant assessment of color differences. 
+The DE2000 function computes the color difference between two LAB color representations: one derived from actual reflectance (Lab_r) and the other from predicted values (Lab_Pr). It implements the CIE Delta E 2000 formula, which incorporates parametric weighting factors 
+KL,KC, and KH to adjust the impact of lightness, chroma, and hue differences on the perceived color difference. This function is essential for applications requiring precise color comparisons, such as in industries focused on color accuracy and consistency in design, manufacturing, and quality assurance.
